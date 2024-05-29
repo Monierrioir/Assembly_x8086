@@ -37,6 +37,19 @@ JNE label   ;if not equal zero jump
 ret
 
 
+MOV AL, 5
+MOV CL, 7
+
+label:
+INC AL
+
+DEC CL
+
+JA label   ;if CF=0 and ZF=0 then jump
+
+ret
+
+
 
 
 
